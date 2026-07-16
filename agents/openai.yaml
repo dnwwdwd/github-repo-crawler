@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Repository Crawler"
+  short_description: "Search and inspect GitHub repositories with evidence"
+  default_prompt: "Use $github-repo-crawler to search GitHub repositories and inspect selected candidates with evidence."

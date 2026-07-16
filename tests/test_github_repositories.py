@@ -72,7 +72,7 @@ class GitHubRepositoriesTests(unittest.TestCase):
             code, result = self.run_cli(["search", "--query", "topic:cli"])
         self.assertEqual(code, 0)
         self.assertEqual(result["authentication"]["mode"], "anonymous")
-        self.assertIn("typically limited to 60", result["warnings"][0])
+        self.assertIn("Core API requests are typically limited to 60", result["warnings"][0])
         self.assertEqual(result["repositories"][0]["license"]["status"], "declared")
 
     @patch.dict(os.environ, {"GITHUB_TOKEN": "token"}, clear=True)

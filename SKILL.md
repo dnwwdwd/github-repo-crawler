@@ -9,7 +9,7 @@ Use this skill for stateless GitHub repository discovery and inspection. Run the
 
 ## Credentials and limits
 
-Read credentials only from `GITHUB_TOKEN`, then `GH_TOKEN`. Do not call `gh auth token` and do not print a token. Without either variable, continue anonymously and surface the returned rate-limit information. Anonymous GitHub API requests are typically limited to 60 requests per hour.
+Read credentials only from `GITHUB_TOKEN`, then `GH_TOKEN`. Do not call `gh auth token` and do not print a token. Without either variable, continue anonymously and surface the returned rate-limit information. Anonymous core API requests are typically limited to 60 requests per hour; GitHub Search has a separate, lower limit.
 
 ## Discover repositories
 

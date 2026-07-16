@@ -168,7 +168,7 @@ def validate_pagination(page: int, max_pages: int, per_page: int) -> None:
 def warnings_for(token: str) -> list[str]:
     if token:
         return []
-    return ["No token found. Requests are anonymous and typically limited to 60 requests per hour."]
+    return ["No token found. Requests are anonymous. Core API requests are typically limited to 60 per hour, and Search has a separate lower limit."]
 
 
 def run_search(args: argparse.Namespace) -> dict[str, Any]:
